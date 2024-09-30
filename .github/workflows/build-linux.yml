@@ -9,8 +9,9 @@ on:
       - main
 env:
   # openssl_location: /usr/lib/ssl
+  # openssl_location: /usr/local/ssl
   # openssl_location: /usr/lib/x86_64-linux-gnu  // Static lib location
-  openssl_location: /usr/local/ssl
+  openssl_location: /usr/include
   
 jobs:
   build:
