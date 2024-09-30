@@ -9,7 +9,7 @@ on:
       - main
 env:
   # openssl_location: /usr/lib/ssl
-  openssl_location: /usr/local/ssl
+  openssl_location: /usr/lib/x86_64-linux-gnu
   
 jobs:
   build:
@@ -17,8 +17,6 @@ jobs:
     steps:        
       - name: List OpenSSL directories
         run: |
-          sudo find libssl.a / | grep libssl.a
-          sudo find libcrypto.a / | grep libcrypto.a
           ls ${{ env.openssl_location }}
           ls ${{ env.openssl_location }}/bin
           ls ${{ env.openssl_location }}/include
