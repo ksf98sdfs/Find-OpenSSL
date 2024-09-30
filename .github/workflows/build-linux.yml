@@ -15,7 +15,7 @@ jobs:
       - name: List OpenSSL directories
         run: |
           openssl version -d
-          echo "LibSSL path:"
-          echo $LIBSSL_PATH
-          echo "LibCrypto path:"
-          echo $LIBCRYPTO_PATH
+          ls /usr/lib/ssl
+          ls /usr/lib/ssl/bin
+          ls /usr/lib/ssl/include
+          ls /usr/lib/ssl/lib
